@@ -1,0 +1,76 @@
+/* Navegacion */
+
+    .navegacion i{
+        color: #217b36;
+        font-size: .9rem;
+        margin-right: .1rem; 
+    }
+
+    .buscador{
+        border: 2px solid #e1e1e1;
+        border-radius: 23px;
+        font-size: .85rem;
+        padding: 0 .5rem;
+        width: 17rem;
+    }
+    .buscador::placeholder{
+        font-size: .7rem;
+    }
+    .conoceMas{
+        max-width: 100%;
+        height: 300px;
+        background-color: #939393;
+        
+    }
+
+/* Conocer mas */  
+    .infoParrafo p{
+        font-size: 1rem;
+        color: #fff;
+        font-weight: bold;
+    }
+    .infoParrafo a{
+        background-color: #ffaf55;
+        color: #fff;
+        padding: .1rem 1rem;
+        border-radius: 5px;
+        border: 1px solid #e1e1e1;
+        text-decoration: none;
+    }
+
+    .conoceMas nav a{
+        padding: .6rem 2rem;
+        font-size: 1.2rem;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .conoceMas nav a i{
+        padding-bottom: .7rem;
+        font-size: 1.5rem;
+    }
+
+    .social a i {
+        background-color: #f1f1ff;
+        color: #4dc95f;
+        padding: .5rem .7rem;
+        border-radius: 4px;
+        font-size: 1.2rem;
+        display: block;
+        margin: .5rem 0;
+    }
+    .nav-study{
+        background-color: rgb(68, 127, 204);
+    }
+    .nav-result{
+        background-color: rgb(35, 212, 88);
+    }
+    .nav-mark{
+        background-color: rgb(10, 136, 73);
+    }
+    .nav-percent{
+        background-color: rgb(219, 112, 41);
+    }
+    .nav-hospi{
+        background-color: rgb(12, 65, 12);
+    }

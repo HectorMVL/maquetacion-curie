@@ -1,74 +1,148 @@
-body{
-    overflow-x: hidden;
-}
-.rounded-lg {
-    border-radius: .55rem!important;
-}
-.shadow {
-    -webkit-box-shadow: 2px 3px 6px 0px rgba(0,0,0,0.38);
-    -moz-box-shadow: 2px 3px 6px 0px rgba(0,0,0,0.38);
-    box-shadow: 2px 3px 6px 0px rgba(0,0,0,0.38);
-}
-/* Navegacion */
+/*Generales*/
 
-    .navegacion i{
-        color: #217b36;
+    @font-face {
+        font-family: 'AmsiproBold';
+        src:url(../fonts/Amsi\ Pro/AmsiPro-Bold.otf);
+    }
+    @font-face {
+        font-family: 'Amsipro';
+        src:url(../fonts/Amsi\ Pro/AmsiPro-Regular.otf);
+    }
+    @font-face {
+        font-family: 'AmsiproSemiBold';
+        src:url(../fonts/Amsi\ Pro/AmsiPro-SemiBold.otf);
+    }
+    body{
+        overflow-x: hidden;
+        font-family: 'Amsipro';
+        font-style: normal;
+    }
+    .rounded-lg {
+        border-radius: .55rem!important;
+    }
+    .shadow {
+        -webkit-box-shadow: 2px 3px 6px 0px rgba(0,0,0,0.38);
+        -moz-box-shadow: 2px 3px 6px 0px rgba(0,0,0,0.38);
+        box-shadow: 2px 3px 6px 0px rgba(0,0,0,0.38);
+    }
+    .contenedor {
+        margin: 0 auto;
+        width: 95%;
+    }
+/* Parte superior */
+    .header .row div{
+        text-align: center;
+        padding: 0 0 .3rem 0;
+    }
+    .header .row div:nth-child(1){
+        background: linear-gradient(to left, #00B478, #46C387);
+    }
+    .header .row div:nth-child(2){
+        background: linear-gradient(to left, #00503C, #006E4B);
+    }
+    
+    .header .row div a {
+        text-decoration: none;
+        color: #fff;
+    }
+/* Navegacion */
+    .contenedor-header {
+        background-image: url(../img/fondo.png);
+        height: 70vh;
+        background-position: top center;
+        background-size: cover;
+    }
+    .seccionNavegacion {
+        background-color: rgba(250, 250, 250, .90);
+    }
+    .logo img{
+        width: 100%;
+    }
+    .navegacion a{
+        color: #000;
         font-size: .9rem;
-        margin-right: .1rem; 
+        text-transform: uppercase;
+    }
+    .navegacion a i{
+        margin-left: .7rem;
+        color: #939393;
+    }
+    .buscadorGruop {
+        width: 100%;
+    }
+    .buscadorGruop i{
+        color: #006446;
+        font-size: 1.2rem;
+        margin-right: .1rem;
+        width: 7%;
     }
 
     .buscador{
         border: 2px solid #e1e1e1;
         border-radius: 23px;
-        font-size: .85rem;
-        padding: 0 .5rem;
-        width: 17rem;
+        font-size: 1rem;
+        width: 85%;
     }
     .buscador::placeholder{
-        font-size: .7rem;
+        font-size: .9rem;
     }
+
+/* Conocer mas */  
     .conoceMas{
-        max-width: 100%;
-        height: 300px;
-        background-color: #939393;
-        
+        height: 95%;
+        padding: 0;
+    }
+    .conoceMas .row{
+        height: 100%;
     }
     .menuConoceMas{
         bottom: -1rem;
         right: 15%;
         left: 15%;
     }
-
-/* Conocer mas */  
+    @media (min-width: 768px){
+        .infoParrafo {
+            padding: 0 0 0 4rem;
+        }
+    }
+   
     .infoParrafo p{
-        font-size: 1rem;
+        font-size: 1.8rem;
         color: #fff;
-        font-weight: bold;
+        font-family: 'AmsiproBold';
+        text-shadow: .7px .7px black;
+        
     }
     .infoParrafo a{
-        background-color: #ffaf55;
+        font-family: 'AmsiproSemiBold';
+        background-color: #F09B69;
         color: #fff;
-        padding: .1rem 1rem;
+        font-size: 1.3rem;
+        padding: 0 1.2rem .7rem 1.2rem;
         border-radius: 5px;
         border: 1px solid #e1e1e1;
         text-decoration: none;
     }
+    
 
-    .conoceMas nav a{
+    .conoceMas .navegacionEstudios nav a{
         padding: .6rem 2rem;
         font-size: 1.2rem;
         color: #fff;
         text-transform: uppercase;
         text-align: center;
     }
-    .conoceMas nav a i{
+    .conoceMas .navegacionEstudios nav a i{
         padding-bottom: .7rem;
         font-size: 1.5rem;
     }
-
+    
+    .social a {
+        text-decoration: none;
+    }
     .social a i {
         background-color: #f1f1ff;
-        color: #4dc95f;
+        color: #46BE82;
         padding: .5rem .7rem;
         border-radius: 4px;
         font-size: 1.2rem;
@@ -76,23 +150,23 @@ body{
         margin: .5rem 0;
     }
     .nav-study{
-        background-color: rgb(68, 127, 204);
+        background-color: #46B4DC;
     }
     .nav-result{
-        background-color: rgb(35, 212, 88);
+        background-color: #46CD87;
     }
     .nav-mark{
-        background-color: rgb(10, 136, 73);
+        background-color: #00B478;
     }
     .nav-percent{
-        background-color: rgb(219, 112, 41);
+        background-color: #F5AF82;
     }
     .nav-hospi{
-        background-color: rgb(12, 65, 12);
+        background-color: #006E4B;
     }
 
 /* SECCIÓN DE ESTUDIOS  */
-
+    
     .iconodown{
         background-color: rgb(17, 228, 217);
     }
@@ -148,9 +222,23 @@ body{
         color: rgb(73, 214, 214);
     }
 
+    .estudiosExtra .after::before{
+        content: url(../img/arrow-right.svg);
+        width: 4rem;
+        display: inline-block;
+        padding-right: 1rem;
+    }
     .estudiosExtra{
         margin-top: 4rem;
     }
+    .estudiosExtra .after::after{
+        content: url(../img/arrow-left.svg);
+        color: #f5a226;
+        width: 4rem;
+        display: inline-block;
+        padding-left: 1rem;
+    }
+    
     .estudiosExtra .btn-group button:nth-child(1) {
         background-color: #f5a226;
         border: 1px solid #fff;

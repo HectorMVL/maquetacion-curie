@@ -15,53 +15,94 @@
   </head>
 
   <body>
-    <!-- Barra de navegación -->        
-        
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#">Curie</a>
-                <form class="d-flex">
-                    <div class="align-items-center navegacion">
-                        <a href="#"><i class="fas fa-search"></i></a>
-                        <input id="search"class="buscador" type="search" placeholder="¿Qué estudio deseas buscar?" aria-label="Search">
-                    </div>
-                    
-                </form>
+      <!-- Parte superior -->  
+            <div class="container-fluid header">
+                <div class="row">
+                        <div class="col-6">
+                            <a href="#">Pacientes</a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#">Empresa</a>
+                        </div>
+                </div>
             </div>
-          </nav>
+      <div class="contenedor-header">
+        <!-- Seccion de navegación -->   
+            <div class="seccionNavegacion">
+                <div class="contenedor">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-2 logo">
+                            <a class="navbar-brand" href="#"><img src="assets/img/curieLabs_logo.png" alt="Logo"></a>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end">
 
-    <!-- Botones y enlaces-->  
-
-        <div class="container conoceMas">
-            <div class="row" style="height: 80% ;">
-                <div class="col-8 align-self-center">
-                    <div class="info">
-                        <div class="infoParrafo">
-                            <p>Consulte los resultados de su ultrasonido en linea, a través de nuestro portal</p>
-                            <a href="#" >Conocer más</a>
+                            <ul class="nav navegacion">
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <a class="nav-link" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Conócenos<i class="fas fa-chevron-right"></i></a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Action</a>
+                                          </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <a class="nav-link" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resultados<i class="fas fa-chevron-right"></i></a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Action</a>
+                                          </div>
+                                    </div>                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <form class="d-flex">
+                                <div class="buscadorGruop">
+                                    <a href="#"><i class="fas fa-search"></i></a>
+                                    <input id="search"class="buscador" type="search" placeholder="¿Qué estudio deseas buscar?" aria-label="Search">
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="social float-right">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+
+            </div>     
+          
+        <!-- Botones y enlaces-->  
+
+            <div class="container conoceMas">
+                <div class="row">
+                    <div class="col-7 align-self-center">
+                        <div class="info">
+                            <div class="infoParrafo">
+                                <p>Consulte los resultados de su ultrasonido en linea, a través de nuestro portal</p>
+                                <a href="#" >Conocer más</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="clearfix"></div>
+                    <div class="col-5">
+                        <div class="social float-right">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="col-12 navegacionEstudios d-flex justify-content-center">
+                        <nav class="nav align-self-end">
+                            <a class="nav-link nav-study" href="#"><i class="fas fa-stethoscope d-block"></i>Estudios</a>
+                            <a class="nav-link nav-result" href="#"><i class="fas fa-hand-holding-medical d-block"></i>Resultados</a>
+                            <a class="nav-link nav-mark" href="#"><i class="fas fa-map-marker-alt d-block"></i>Sucursales</a>
+                            <a class="nav-link nav-percent" href="#"><i class="fas fa-percent d-block"></i>Promociones</a>
+                            <a class="nav-link nav-hospi" href="#"><i class="far fa-hospital d-block"></i>Empresa</a>
+                        </nav>
+                    </div>
                 </div>
             </div>
-            <div class="row menuConoceMas">
-                <div class="col-12">
-                    <nav class="nav justify-content-center">
-                        <a class="nav-link nav-study" href="#"><i class="fas fa-stethoscope d-block"></i>Estudios</a>
-                        <a class="nav-link nav-result" href="#"><i class="fas fa-hand-holding-medical d-block"></i>Resultados</a>
-                        <a class="nav-link nav-mark" href="#"><i class="fas fa-map-marker-alt d-block"></i>Sucursales</a>
-                        <a class="nav-link nav-percent" href="#"><i class="fas fa-percent d-block"></i>Promociones</a>
-                        <a class="nav-link nav-hospi" href="#"><i class="far fa-hospital d-block"></i>Empresa</a>
-                    </nav>
-                </div>
-            </div>
-        </div>
+      </div>
+    
 
         <div style="width: 100%; height: 200px;"></div>
     <!-- Seccion de estudios -->    
@@ -157,18 +198,20 @@
             </div>
             <div class="row estudiosExtra">
                 <div class="col-12 d-flex justify-content-center">
-                    <div class="btn-group dropright shadow rounded-lg">
-                        <button type="button" class="btn">
-                             Encuentra el estudio que necesites
-                        </button>
-                        <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-chevron-right"></i>
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <!-- Dropdown menu links -->
-                                <a href="#" class="dropdown-item"></a>
-                                <a href="#" class="dropdown-item"></a>
-                                <a href="#" class="dropdown-item"></a>
+                    <div class="after d-flex align-items-center">
+                        <div class="btn-group dropright shadow rounded-lg">
+                            <button type="button" class="btn">
+                                 Encuentra el estudio que necesites
+                            </button>
+                            <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <!-- Dropdown menu links -->
+                                    <a href="#" class="dropdown-item"></a>
+                                    <a href="#" class="dropdown-item"></a>
+                                    <a href="#" class="dropdown-item"></a>
+                            </div>
                         </div>
                     </div>
                 </div>

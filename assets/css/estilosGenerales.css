@@ -12,6 +12,14 @@
         font-family: 'AmsiproSemiBold';
         src:url(../fonts/Amsi\ Pro/AmsiPro-SemiBold.otf);
     }
+    @font-face {
+        font-family: 'AmsiproLight';
+        src:url(../fonts/Amsi\ Pro/AmsiPro-Light.otf);
+    }
+    @font-face {
+        font-family: 'AmsiproXLight';
+        src:url(../fonts/Amsi\ Pro/AmsiPro-XLight.otf);
+    }
     body{
         overflow-x: hidden;
         font-family: 'Amsipro';
@@ -46,7 +54,7 @@
         text-decoration: none;
         color: #fff;
     }
-/* Navegacion */
+/* Seccion de navegación */
     .contenedor-header {
         background-image: url(../img/fondo.png);
         height: 70vh;
@@ -127,7 +135,8 @@
     
 
     .conoceMas .navegacionEstudios nav a{
-        padding: .6rem 2rem;
+        width: 13rem;
+        padding: 1rem 0;
         font-size: 1.2rem;
         color: #fff;
         text-transform: uppercase;
@@ -171,7 +180,62 @@
         background-color: #006E4B;
     }
 
-/* SECCIÓN DE ESTUDIOS  */
+/*   Seccion de beneficios  */
+
+    .beneficios {
+        background-color: #fff;
+        padding: 2rem 0;
+    }
+
+    .beneficios .beneficiosTitulo {
+        display: flex;
+        justify-content: center;
+        padding: 3rem 0;
+    }
+    .beneficios .beneficiosTitulo::after {
+        content: "";
+        width: 70%;
+        background-color: #46BE82;
+        height: .12rem;
+    }
+    
+    .beneficios .beneficiosTitulo h2{
+        text-align: center;
+        font-family: 'AmsiproBold';
+        text-transform: uppercase;
+        color: #005F46;
+    }
+    .beneficios .beneficiosTitulo p{
+        font-family: 'AmsiproLight';
+        width: 48%;
+        font-size: 1.1rem;
+        padding-bottom: .8rem;
+    }
+
+    .beneficios .beneficiosContenido div{
+        display: flex;
+    }
+    .beneficios .beneficiosContenido div img{
+        height: 33%;
+        margin-right: 1rem;
+    }
+    .beneficios .beneficiosContenido div p{
+        font-family: 'AmsiproXLight';
+        font-size: .92rem;
+        text-align: justify;
+    }
+    .beneficios .beneficiosContenido div p span{
+        font-family: 'AmsiproBold';
+        font-size: 1.1rem;
+        display: block;
+        padding-bottom: .5rem;
+    }
+    .beneficios .beneficiosContenido div p span:nth-child(2){
+        font-family: 'Amsipro';
+        font-size: .92rem;
+        display: inline;
+    }
+/* Seccion de estudios  */
     
     .iconodown{
         background-image: url(../img/barra.png);
@@ -192,8 +256,8 @@
         color: #fff;
     }
     .iconodown p {
-        margin: 0;
-        padding: 2rem 0 .5rem 0;
+        margin:0;
+        padding-top: 1.5rem;
         color: #fff;
         text-transform: uppercase;
         font-weight: bold;
@@ -202,7 +266,7 @@
 
     .tiposEstudios{
         background-image: url(../img/barraEstudios2.png);
-        height: 65vh;
+        height: 68vh;
         background-position: center center;
         background-size: cover;
     }
@@ -274,4 +338,84 @@
     .estudiosExtra .img {
         height: 43%;
         padding: 0 1.5rem;
+    }
+
+/*  Seccion de footer  */
+
+    .footer {
+        background-image: linear-gradient(#006E4B,#00503C);
+        color: #fff;
+        font-family: 'AmsiproSemiBold';
+    }
+    .footer .row {
+        padding-top: 1rem;
+    }
+    .footer .row::after {
+        content: "";
+        width: 100%;
+        background-color: #46BE82;
+        height: .12rem;
+        margin-top: 1rem;
+    }
+    .footer .row .footerSocial {
+        font-size: 1.4rem;
+        font-family: 'AmsiproSemiBold';
+        
+    }
+    .footerSocial  .footerSocialIcons img{
+        margin-left: 1rem;
+        border-radius: .2rem;
+    }
+    .footerSocial  .footerSocialIcons a:nth-child(1) img{
+        background-color: #F09B69;
+        padding: .4rem;
+    }
+    .footerSocial  .footerSocialIcons a:nth-child(2) img{
+        background-color: #50B4DC;
+        padding: .45rem .7rem;
+    }
+    .footer .conocenosContenido h3 {
+        font-size: 1.3rem;
+    }
+    .footer .conocenosContenido ul {
+        margin-top: 1rem;
+        padding-left: 1.6rem;
+    }
+    .footer .conocenosContenido ul li,
+    .footer .conocenosContenido p{
+        font-family: 'AmsiproLight';
+        font-size: .8rem;
+        margin-bottom: .5rem;
+    }
+    .footer .conocenosContenido span{
+        display: block;
+        line-height: 2;
+    }
+    .footer .conocenosContenido .contacto p{
+        display: inline;
+    }
+    .footer .conocenosContenido .contacto img{
+        width: 4%;
+        margin-right: .3rem;
+    }
+    .footer .conocenosContenido .certificacionContenido {
+        text-align: center;
+    }
+
+    .footer .textoExtra p{
+        color:#46C387;
+        font-family: 'Amsipro';
+        margin: 0;
+        font-size: .85rem;
+        padding: .4rem;
+    }
+    .footerAutor {
+        background-color: #005F46;
+        color: #fff;
+        margin: 0;
+        padding: .4rem 0;
+        text-align: center;
+    }
+    .footerAutor p {
+        margin: 0;
     }

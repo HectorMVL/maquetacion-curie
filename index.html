@@ -29,14 +29,29 @@
         <div class="contenedorHeader">  
             <div id="navega" class="carousel slide hero" data-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-interval="2000">
-                        <img src="assets/img/fondo.png">
+                    <div class="carousel-item active" data-interval="">
+                        <picture>
+                            <source srcset="assets/img/fondo.png" media="(min-width: 1360px)">
+                            <source srcset="assets/img/fondo-mobile-md.png" media="(min-width: 720px)">
+                            <source srcset="assets/img/fondo-mobile.png" media="(min-width: 360px)">
+                            <img srcset="assets/img/fondo.png">
+                        </picture>
                     </div>
-                    <div class="carousel-item" data-interval="2000">
-                        <img src="assets/img/fondo.png">
+                    <div class="carousel-item" data-interval="">
+                        <picture>
+                            <source srcset="assets/img/fondo.png" media="(min-width: 1360px)">
+                            <source srcset="assets/img/fondo-mobile-md.png" media="(min-width: 720px)">
+                                <source srcset="assets/img/fondo-mobile.png" media="(min-width: 360px)">
+                            <img srcset="assets/img/fondo.png">
+                        </picture>
                     </div>
-                    <div class="carousel-item" data-interval="2000">
-                        <img src="assets/img/fondo.png">
+                    <div class="carousel-item" data-interval="">
+                        <picture>
+                            <source srcset="assets/img/fondo.png" media="(min-width: 1360px)">
+                            <source srcset="assets/img/fondo-mobile-md.png" media="(min-width: 720px)">
+                                <source srcset="assets/img/fondo-mobile.png" media="(min-width: 360px)">
+                            <img srcset="assets/img/fondo.png">
+                        </picture>
                     </div>
                 </div>
                 <!-- Contenido del hero --> 
@@ -45,11 +60,10 @@
                     <div class="seccionNavegacion">
                         <div class="contenedor">
                             <div class="row d-flex align-items-center">
-                                <div class="col-6 col-sm-3 col-md-2 logo">
+                                <div class="col-3 col-md-2 logo">
                                     <a class="navbar-brand" href="#"><img src="assets/img/curieLabs_logo.png" alt="Logo"></a>
                                 </div>
-                                <div class="col-6 col-sm-3 col-md-6 -flex justify-content-end">
-
+                                <div class=" col-5 col-md-6 d-flex justify-content-end">
                                     <ul class="nav navegacion">
                                         <li class="nav-item">
                                             <div class="dropdown">
@@ -72,8 +86,8 @@
                                             </div>                                </li>
                                     </ul>
                                 </div>
-                                <div class="col-12 col-sm-6 col-md-4 mb-2">
-                                    <form class="d-flex">
+                                <div class="col-4 col-md-4 buscadorContenido">
+                                    <form >
                                         <div class="buscadorGruop">
                                             <a href="#"><img src="assets/img/icons/buscadorIcon.png" alt="icon"></a>
                                             <input id="search"class="buscador" type="search" placeholder="¿Qué estudio deseas buscar?" aria-label="Search">
@@ -85,17 +99,18 @@
 
                     </div> 
                     <!-- Botones y enlaces de conocer mas-->  
-                    <div class="container conoceMas">
+                    <div class="conoceMas">
                         <div class="row">
-                            <div class="col-9 col-md-7 align-self-end">
-                                <div class="info">
+                            <div class="col-10 align-self-end">
+                                <div class="info d-flex justify-content-center">
                                     <div class="infoParrafo">
-                                        <p>Consulte los resultados de su ultrasonido en linea, a través de nuestro portal</p>
+                                        <p>Consulte los resultados de su ultrasonido</p>
+                                        <p>en linea, a través de nuestro portal</p>
                                         <a href="#" >Conocer más</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-3 col-md-5">
+                            <div class="col-2">
                                 <div class="social float-right">
                                     <a href="#"><img src="assets/img/icons/facebookIcon.png"alt="icon"></i></a>
                                     <a href="#"><img src="assets/img/icons/whatsappIcon.png"alt="icon"></a>
@@ -177,7 +192,9 @@
                     <div class="col-6 d-flex justify-content-end">
                         <div class="btn-group dropright shadow rounded-lg">
                             <button type="button" class="btn">
-                                <img src="assets/img/icons/ultrasonidoIcon.png" alt="Icon">ultrasonido
+                                <div class="butonContenido">
+                                    <div class="butonContenidoImg"><img src="assets/img/icons/ultrasonidoIcon.png" alt="Icon"></div><span>Ultrasonido</span>
+                                </div>
                             </button>
                             <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <img src="assets/img/icons/flechaDerechaAzulIcon.png" alt="Icon">
@@ -192,7 +209,9 @@
                     <div class="col-6 d-flex justify-content-star">
                         <div class="btn-group dropright shadow rounded-lg">
                             <button type="button" class="btn">
-                                <img src="assets/img/icons/colposcopiaIcon.png" alt="Icon">colposcopía
+                                <div class="butonContenido"> 
+                                    <div class="butonContenidoImg"><img src="assets/img/icons/colposcopiaIcon.png" alt="Icon"></div><span>Colopscopía</span>
+                                </div> 
                             </button>
                             <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <img src="assets/img/icons/flechaDerechaAzulIcon.png" alt="Icon">
@@ -209,8 +228,9 @@
                     <div class="col-6 d-flex justify-content-end">
                         <div class="btn-group dropright shadow rounded-lg">
                             <button type="button" class="btn">
-                                <img src="assets/img/icons/radiologiaIcon.png" alt="Icon">Radiología
-                            </button>
+                            <div class="butonContenido">
+                                <div class="butonContenidoImg"><img src="assets/img/icons/radiologiaIcon.png" alt="Icon"></div><span>Radiología</span>
+                            </div>                            </button>
                             <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <img src="assets/img/icons/flechaDerechaAzulIcon.png" alt="Icon">
                             </button>
@@ -224,8 +244,9 @@
                     <div class="col-6 d-flex justify-content-star">
                         <div class="btn-group dropright shadow rounded-lg">
                             <button type="button" class="btn">
-                                <img src="assets/img/icons/electrocardiogramaIcon.png" alt="Icon">Electrocardiograma
-                            </button>
+                                <div class="butonContenido">
+                                    <div class="butonContenidoImg"><img src="assets/img/icons/electrocardiogramaIcon.png" alt="Icon"></div><span>Electrocardiograma</span>
+                                </div>                               </button>
                             <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <img src="assets/img/icons/flechaDerechaAzulIcon.png" alt="Icon">
                             </button>
@@ -241,8 +262,9 @@
                     <div class="col-6 d-flex justify-content-end">
                         <div class="btn-group dropright shadow rounded-lg">
                             <button type="button" class="btn">
-                                <img src="assets/img/icons/analicisClinicosIcon.png" alt="Icon">análisis clínicos
-                            </button>
+                                <div class="butonContenido">
+                                    <div class="butonContenidoImg"><img src="assets/img/icons/analicisClinicosIcon.png" alt="Icon"></div><span>Análisis Clínicos</span>
+                                </div>                               </button>
                             <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <img src="assets/img/icons/flechaDerechaAzulIcon.png" alt="Icon">
                             </button>
@@ -256,8 +278,9 @@
                     <div class="col-6 d-flex justify-content-star">
                         <div class="btn-group dropright shadow rounded-lg">
                             <button type="button" class="btn">
-                                <img src="assets/img/icons/microbiologiaAlimentosIcon.png" alt="Icon">microbiología de limentosIcon
-                            </button>
+                                <div class="butonContenido">
+                                    <div class="butonContenidoImg"><img src="assets/img/icons/microbiologiaAlimentosIcon.png" alt="Icon"></div><span>Microbiología de alimentos</span>
+                                </div>                             </button>
                             <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <img src="assets/img/icons/flechaDerechaAzulIcon.png" alt="Icon">
                             </button>
@@ -272,9 +295,9 @@
                 <div class="row estudiosExtra">
                     <div class="col-12 d-flex justify-content-center align-items-center">
                         <img class="img"src="assets/img/icons/FlechaCurvaDerechaIcon.png" alt="icon">
-                        <div class="btn-group dropright rounded-lg">
+                        <div class="btn-group shadow dropright rounded-lg">
                             <button type="button" class="btn">
-                                 !Encuentra el estudio que necesites¡
+                                 <p>¡Encuentra el estudio que necesites!</p> 
                             </button>
                             <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <img src="assets/img/icons/flechaBlancaIcon.png" alt="Icon">

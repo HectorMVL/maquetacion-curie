@@ -766,10 +766,13 @@
         background-position: center center;
         background-size: cover;
     }
-        
-        @media (min-width: 1200px){
+        @media (min-width: 576px){
+            .iconodown{height: 8vh;}
+        }
+        @media (min-width: 720px){
             .iconodown{height: 10vh;}
         }
+
         /*  Fin */
         /*  Inicio */
         
@@ -832,7 +835,7 @@
                 top: -25.6px;
             } 
             .iconodownIcon img{
-                padding: 19.2px 16px;
+                padding: 17.2px 14px;
                 border: 2px solid #fff;
                 border-radius: 50%;
                 background: #73C8DC;
@@ -864,7 +867,7 @@
         
     .tiposEstudios{
         background-image: url(../img/barraEstudios2.png);
-        height: 65vh;
+        height: 85vh;
         background-position: center center;
         background-size: cover;
     }
@@ -882,7 +885,7 @@
         }
         @media (min-width: 720px){
             .tiposEstudios{
-                height: 60vh;
+                height: 70vh;
             }
         }
         @media (min-width: 1200px){
@@ -902,7 +905,7 @@
     
     .tiposEstudios .row .btn-group{
         width: 88%;
-        height: 60px;
+        height: 40px;
         margin-bottom: 20px;
     }
     .tiposEstudios .row .btn-group button{
